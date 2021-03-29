@@ -1,7 +1,5 @@
 # Idle Shape Factory
 
-
-
 * [Link to deployed website]()
 * [Link to github repository]()
 
@@ -75,7 +73,7 @@ This image shows the initial design for the homepage.
 
 # Features
 * 
-* On smaller screens, the header will collapse, and the elements will stack on top of each other. 
+* On smaller screens, the elements will stack on top of each other. 
 * 
 
 ### The Homepage
