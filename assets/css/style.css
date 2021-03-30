@@ -7,5 +7,10 @@
   body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
-    background-color:cornsilk;
+    background-color:mintcream;
+  }
+
+  #total-money {
+      background-color:olivedrab;
+      margin-top: 3rem;
   }
