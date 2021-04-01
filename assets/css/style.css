@@ -10,6 +10,24 @@
     background-color: #F0A868;
   }
 
+  /* these two were taken from stack overflow and edited for my use */
+  #overlay {
+    background: rgba(0, 0, 0, .4);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+#intro {
+    background:darkkhaki;
+    height: 30rem;
+    margin: 3rem auto ;
+    width: 30rem;
+}
+
   #game-name {
       margin-top: 2rem;
       font-family: 'Abril Fatface', cursive;
