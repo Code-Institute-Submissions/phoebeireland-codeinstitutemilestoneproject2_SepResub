@@ -18,10 +18,10 @@ function laserTotal() {
 
 }
 
-function 3DTotal() {
+function tDTotal() {
 
 }
 
 function overallTotal() {
-    
+
 }
