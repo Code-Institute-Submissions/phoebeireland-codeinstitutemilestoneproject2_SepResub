@@ -7,7 +7,17 @@ $(document).ready(function() {
             .off();
     });
 });
-function clickTotal() {
+
+//this was taken from the Love Maths Project
+
+function overallTotal() {
+    // Gets the current score from the DOM and increments it
+
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+}
+
+function boxTotal() {
 
 }
 
@@ -31,6 +41,3 @@ function tDTotal() {
 
 }
 
-function overallTotal() {
-
-}
