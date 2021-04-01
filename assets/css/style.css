@@ -27,10 +27,6 @@
       font-size: x-large;
   }
 
-  #option-table {
-      overflow-y: scroll;
-  }
-
   .btn{
-      margin: 2rem;
+      margin-top: 2rem;
   }
