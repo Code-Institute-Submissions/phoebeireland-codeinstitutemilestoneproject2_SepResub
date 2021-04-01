@@ -31,7 +31,6 @@
       overflow-y: scroll;
   }
 
-  .option-button {
+  .btn{
       margin: 2rem;
-      background-color: #B9D6F2;
   }

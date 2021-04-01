@@ -37,17 +37,17 @@
         On large screens, they'll be next to each other. on smaller screens they'll be stacked with the clicking area on top
         The clickable area will be fixed as well, and the options will be fixed with an overflow on the y-axis for scrolling-->
         <div class="row">
-            <div class= "col-12 col-md-6 col-lg-6">
+            <div class= "col-12 col-lg-6">
                 <button id="main-square" onclick="functionname();">Click Me</button>
             </div>
-            <div class= "col-12 col-md-6 col-lg-6">
-                <table id="option-table">
-                    <tr><td><button id="firt-option" class="option-button" onclick="functionname();">Child Scissors</button></td></tr>
-                    <tr><td><button id="second-option" class="option-button" onclick="functionname();">Fancy Scissors</button></td></tr>
-                    <tr><td><button id="third-option" class="option-button" onclick="functionname();">Stamp Cutter</button></td></tr>
-                    <tr><td><button id="fourth-option" class="option-button" onclick="functionname();">Laser Printer</button></td></tr>
-                    <tr><td><button id="fifth-option" class="option-button" onclick="functionname();">3D Printer</button></td></tr>
-                </table>
+            <div class= "col-12 col-lg-6">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button" onclick="functionname();">Child Scissors</button>
+                    <button class="btn btn-primary" type="button" onclick="functionname();">Fancy Scissors</button>
+                    <button class="btn btn-primary" type="button" onclick="functionname();">Stamp Cutter</button>
+                    <button class="btn btn-primary" type="button"onclick="functionname();">Laser Printer</button>
+                    <button class="btn btn-primary" type="button" onclick="functionname();">3D Printer</button>
+                  </div>
             </div>
         </div>
     </div>
@@ -56,4 +56,5 @@
 </html>
 
 <!-- The colour scheme was created using Coolors
-the code for the option table was taken from https://stackoverflow.com/questions/5528419/html-table-with-button-on-each-row -->
+the code for the option table was taken from bootstrap 
+need to fix sizing issue on smaller screens-->
