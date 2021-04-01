@@ -12,6 +12,7 @@
 
   #game-name {
       margin-top: 2rem;
+      font-family: 'Abril Fatface', cursive;
   }
   #total-money {
       background-color:#7BD389;
