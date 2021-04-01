@@ -25,4 +25,13 @@
       margin: 2rem;
       background-color: #0E79B2;
       font-size: x-large;
-  } */
+  }
+
+  #option-table {
+      overflow-y: scroll;
+  }
+
+  .option-button {
+      margin: 2rem;
+      background-color: #B9D6F2;
+  }
