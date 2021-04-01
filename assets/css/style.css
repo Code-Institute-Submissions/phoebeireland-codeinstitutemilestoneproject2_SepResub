@@ -56,6 +56,10 @@
       font-size: x-large;
   }
 
+  #upgrades {
+      margin-top: 2rem;
+  }
+
   .btn{
       margin-top: 2rem;
   }
