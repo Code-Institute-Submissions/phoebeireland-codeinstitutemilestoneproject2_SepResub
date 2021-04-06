@@ -13,6 +13,7 @@ $(document).ready(function() {
 function overallTotal() {
 }
 
+//write a function that will count the clicks on the smaller buttons for the incrementation and assign that value to a variable
 
 //this was taken from the Love Maths Project
 function boxTotal() {
@@ -22,22 +23,27 @@ function boxTotal() {
 }
 
 function childTotal() {
-
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = oldScore + ; //write a variable that will contain the upgrade increments
 }
 
 function scissorTotal() {
-
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 }
 
 function stampTotal() {
-
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 }
 
 function laserTotal() {
-
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 }
 
 function tDTotal() {
-
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 }
 
