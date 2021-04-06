@@ -28,7 +28,7 @@ function boxTotal() {
 
 function childTotal() {
     let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = oldScore + (); //write a variable that will contain the upgrade increments
+    document.getElementById("score").innerText = oldScore + (5); //write a variable that will contain the upgrade increments
 }
 
 function scissorTotal() {
