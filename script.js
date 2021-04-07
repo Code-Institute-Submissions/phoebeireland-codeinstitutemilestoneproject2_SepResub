@@ -8,8 +8,6 @@ $(document).ready(function() {
     });
 });
 
-
-
 function overallTotal() {
 }
 
@@ -28,35 +26,39 @@ function boxTotal() {
 
 }
 
-//the code for the click counter was taken from https://jsfiddle.net/sayham28/01hdx3t9/
+//the code for the click counter was taken from https://jsfiddle.net/sayham28/01hdx3t9/ and adapted
 function allTotal(multiplier) {
     clickCount++;
-    var childClickCount = multiplier * clickCount
+    var allClickCount = multiplier * clickCount
     let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = oldScore + (childClickCount);
+    document.getElementById("score").innerText = oldScore + (allClickCount);
 }
 
-function clickTimer(delay) {
-
+//code was taken from stack overflow https://stackoverflow.com/questions/2170923/whats-the-easiest-way-to-call-a-function-every-5-seconds-in-jquery?noredirect=1&lq=1
+function clickTimer(multiplier, delay) {
+    setInterval(function(){ 
+        allTotal(multiplier)
+    }, delay);
 }
 
 function childTotal() {
-    //call allTotal to increment and call a separate function that starts a timer and keeps calling allTotal on the new timer
+    clickTimer(2, 2000)
+
 }
 
 function scissorTotal() {
-
+    clickTimer(2, 2000)
 }
 
 function stampTotal() {
-
+    clickTimer(2, 2000)
 }
 
 function laserTotal() {
-
+    clickTimer(2, 2000)
 }
 
 function tDTotal() {
-
+    clickTimer(2, 2000)
 }
 
