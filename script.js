@@ -42,23 +42,23 @@ function clickTimer(multiplier, delay) {
 }
 
 function childTotal() {
-    clickTimer(2, 2000)
+    clickTimer(2, 5000)
 
 }
 
 function scissorTotal() {
-    clickTimer(2, 2000)
+    clickTimer(2.5, 10000)
 }
 
 function stampTotal() {
-    clickTimer(2, 2000)
+    clickTimer(3, 15000)
 }
 
 function laserTotal() {
-    clickTimer(2, 2000)
+    clickTimer(3.5, 20000)
 }
 
 function tDTotal() {
-    clickTimer(2, 2000)
+    clickTimer(4, 25000)
 }
 
