@@ -52,6 +52,16 @@ function childTotal() {
 
 }
 
+//this was taken from example on https://api.jquery.com/hover/
+
+$( "#c-scissor" ).hover(
+    function() {
+      $( this ).append( $( "<span> </span>" ) );
+    }, function() {
+      $( this ).find( "span" ).last().remove();
+    }
+  );
+
 function scissorTotal() {
     clickTimer(2.5, 0.2, 10000)
 }
