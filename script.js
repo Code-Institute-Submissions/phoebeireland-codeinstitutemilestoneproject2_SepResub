@@ -66,15 +66,47 @@ function scissorTotal() {
     clickTimer(2.5, 0.2, 10000)
 }
 
+$( "#f-scissor" ).hover(
+    function() {
+      $( this ).append( $( "<span><br> Each click will add a multiplier of 2.5 to the current score</span>" ) );
+    }, function() {
+      $( this ).find( "span" ).last().remove();
+    }
+  );
+
 function stampTotal() {
     clickTimer(3, 0.3,15000)
 }
+
+$( "#stamp-cutter" ).hover(
+    function() {
+      $( this ).append( $( "<span><br> Each click will add a multiplier of 3 to the current score</span>" ) );
+    }, function() {
+      $( this ).find( "span" ).last().remove();
+    }
+  );
 
 function laserTotal() {
     clickTimer(3.5, 0.4, 20000)
 }
 
+$( "#laser-printer" ).hover(
+    function() {
+      $( this ).append( $( "<span><br> Each click will add a multiplier of 3.5 to the current score</span>" ) );
+    }, function() {
+      $( this ).find( "span" ).last().remove();
+    }
+  );
+
 function tDTotal() {
     clickTimer(4, 0.5, 25000)
 }
+
+$( "#td-printer" ).hover(
+    function() {
+      $( this ).append( $( "<span><br> Each click will add a multiplier of 4 to the current score</span>" ) );
+    }, function() {
+      $( this ).find( "span" ).last().remove();
+    }
+  );
 
