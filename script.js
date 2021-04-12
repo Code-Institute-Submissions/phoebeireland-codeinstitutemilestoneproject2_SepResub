@@ -8,6 +8,8 @@ $(document).ready(function() {
     });
 });
 
+var allScore = 0;
+
 function overallTotal() {
 }
 
@@ -37,6 +39,7 @@ function allTotal(multiplier, cost) {
 function costScore(cost) {
     let oldScore = parseInt(document.getElementById("score").innerText);
     var cScore = oldScore - (oldscore * cost)
+    allScore = cScore 
 }
 */
 
