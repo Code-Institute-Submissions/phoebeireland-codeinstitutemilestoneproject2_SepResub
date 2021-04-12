@@ -56,7 +56,7 @@ function childTotal() {
 
 $( "#c-scissor" ).hover(
     function() {
-      $( this ).append( $( "<span>: Each click will add a multiplier of 2 to the current score</span>" ) );
+      $( this ).append( $( "<br><span> Each click will add a multiplier of 2 to the current score</span>" ) );
     }, function() {
       $( this ).find( "span" ).last().remove();
     }
