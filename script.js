@@ -14,7 +14,9 @@ var boxClicks = 0;
 function overallTotal() {
 }
 
+/*
 let gameObjects = {childScissors: 0, fancyScissors: 0, stampCutter: 0, laserPrinter: 0, tDPrinter: 0}
+*/
 
 //write a function that will count the clicks on the smaller buttons for the incrementation and assign that value to a variable
     var clickCount = 0;
