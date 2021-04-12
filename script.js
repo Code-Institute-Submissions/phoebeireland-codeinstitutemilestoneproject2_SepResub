@@ -9,9 +9,12 @@ $(document).ready(function() {
 });
 
 var allScore = 0;
+var boxClicks = 0;
 
 function overallTotal() {
 }
+
+let gameObjects = {childScissors: 0, fancyScissors: 0, stampCutter: 0, laserPrinter: 0, tDPrinter: 0}
 
 //write a function that will count the clicks on the smaller buttons for the incrementation and assign that value to a variable
     var clickCount = 0;
@@ -35,6 +38,7 @@ function allTotal(multiplier, cost) {
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = (oldScore - (oldScore * cost))+ (allClickCount);
 }
+
  /*
 function costScore(cost) {
     let oldScore = parseInt(document.getElementById("score").innerText);
