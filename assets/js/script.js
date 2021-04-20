@@ -85,11 +85,11 @@ function updateScore(cost, allClickCount, is_box_click) {
   if (is_box_click) {
       console.log("main box clicked");
       oldScore++;
-      document.getElementById("score").innerText = oldScore.toString();
+      document.getElementById("score").innerText = oldScore.toFixed(2);
   } else {
       console.log("im a bonus button");
       oldScore = parseInt(document.getElementById("score").innerText);
-      document.getElementById("score").innerText = (oldScore - (oldScore * cost)) + (allClickCount);
+      document.getElementById("score").innerText = ((oldScore - (oldScore * cost)) + (allClickCount)).toFixed(2);
   }
   checkScore();
 }
