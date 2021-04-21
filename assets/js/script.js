@@ -122,23 +122,14 @@ function checkScore() {
 }
 
 function saveScore() {
-  document.cookie = "score=" + oldScore;
-  alert("document.cookie");
+  document.cookie = "score=" + oldScore.toString() + ";path=/";
+  alert(document.cookie);
 }
-
-window.onunload = (event) => {
-  saveScore();
-  console.log('The page is unloaded');
-  alert("Ahhh");
-};
 
 function loadScore() {
   let value = document.cookie.split("=")[1];
-  
-  alert(document.cookie);
   if (isNaN(value)) {
     value = 0;
-    alert(value);
   }  
   oldScore = value;
 }
