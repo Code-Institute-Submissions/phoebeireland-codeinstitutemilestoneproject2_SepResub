@@ -132,9 +132,10 @@ function loadScore() {
     value = 0;
   }  
   oldScore = value;
+  document.getElementById("score").innerText = oldScore;
 }
 
 window.onload = (event) => {
   loadScore();
-  console.log('The page is loaded');
-};
+  console.log('The previous score has loaded');
+}
