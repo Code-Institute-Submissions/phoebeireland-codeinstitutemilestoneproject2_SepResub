@@ -94,13 +94,29 @@ function updateScore(cost, allClickCount, is_box_click) {
   checkScore();
 }
 function checkScore() {
-  if (oldScore >= 5) {
+  if (oldScore >= 20) {
       console.log("hit ");
       let firstButton = document.getElementById("c-scissor");
       firstButton.disabled = false;
   }
-  if (oldScore >= 10) {
+  if (oldScore >= 40) {
       console.log("hit ");
-      // here is where you activate the button for lets say the second item
+      let firstButton = document.getElementById("f-scissor");
+      firstButton.disabled = false;
+  }
+  if (oldScore >= 60) {
+    console.log("hit ");
+    let firstButton = document.getElementById("stamp-cutter");
+    firstButton.disabled = false;
+  }
+  if (oldScore >= 80) {
+    console.log("hit ");
+    let firstButton = document.getElementById("laser-printer");
+    firstButton.disabled = false;
+  }
+  if (oldScore >= 100) {
+    console.log("hit ");
+    let firstButton = document.getElementById("td-printer");
+    firstButton.disabled = false;
   }
 }
