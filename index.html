@@ -61,11 +61,11 @@
             <div class= "col-12 col-lg-6">
                 <h2 id="upgrades">Upgrades:</h2>
                 <div class="d-grid gap-2">
-                    <button id= "c-scissor" class="btn btn-primary" type="button" onclick="childTotal();">+1 Child Scissors</button>
-                    <button id= "f-scissor" class="btn btn-primary" type="button" onclick="scissorTotal();">+1 Fancy Scissors</button>
-                    <button id= "stamp-cutter" class="btn btn-primary" type="button" onclick="stampTotal();">+1 Stamp Cutter</button>
-                    <button id= "laser-printer" class="btn btn-primary" type="button" onclick="laserTotal();">+1 Laser Printer</button>
-                    <button id= "td-printer" class="btn btn-primary" type="button" onclick="tDTotal();">+1 3D Printer</button>
+                    <button id= "c-scissor" class="btn btn-primary" type="button" onclick="childTotal();" disabled data-bs-toggle="button">+1 Child Scissors</button>
+                    <button id= "f-scissor" class="btn btn-primary" type="button" onclick="scissorTotal();" disabled data-bs-toggle="button">+1 Fancy Scissors</button>
+                    <button id= "stamp-cutter" class="btn btn-primary" type="button" onclick="stampTotal();" disabled data-bs-toggle="button">+1 Stamp Cutter</button>
+                    <button id= "laser-printer" class="btn btn-primary" type="button" onclick="laserTotal();" disabled data-bs-toggle="button">+1 Laser Printer</button>
+                    <button id= "td-printer" class="btn btn-primary" type="button" onclick="tDTotal();" disabled data-bs-toggle="button">+1 3D Printer</button>
                   </div>
             </div>
         </div>
@@ -78,8 +78,8 @@
 </html>
 
 <!-- The colour scheme was created using Coolors
-the code for the option table was taken from bootstrap 
-need to fix sizing issue on smaller screens
+the code for the button/option table was taken from bootstrap 
+need to fix sizing issue on smaller screens (fixed)
 All code related to the overlay was taken from here and altered to fit the project: https://stackoverflow.com/questions/22837407/overlaying-a-transparent-div-which-when-clicked-disappears
 Uses jquery
 the code for the money area was taken from the Love Maths project-->

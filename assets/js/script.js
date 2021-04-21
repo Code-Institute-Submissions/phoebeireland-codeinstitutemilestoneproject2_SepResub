@@ -96,7 +96,8 @@ function updateScore(cost, allClickCount, is_box_click) {
 function checkScore() {
   if (oldScore >= 5) {
       console.log("hit ");
-      // here is where you activate the button for lets say the first item
+      let firstButton = document.getElementById("c-scissor");
+      firstButton.disabled = false;
   }
   if (oldScore >= 10) {
       console.log("hit ");
