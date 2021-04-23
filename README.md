@@ -17,44 +17,47 @@
 
 ## The Project- Purpose and Buisness Goals
 
+The purpose of this website was to create an idle clicker game. The webpage should both be a platform for the game as well as provide information for users on how the 
+game is played. 
+
+On the business end, the website should be simple nough to use for new users, while still offering enough content and variety for returning users. Furthermore, returning users should
+have the option to carry over their scores from previous sessions, so they do not have to start over every time that they enter the game. 
+
 
 ## User Stories
 As a New User to the site, I want:
-1. 
-2. 
-3. 
-4. 
+1. To be able to learn how to play the game easily
+2. Easily accessed buttons and clearly displayed money total
+3. A fun looking game with engaging colours
 
 As a Returning User to the site, I want:
-1. 
-2. 
-3. 
-4. 
+1. To be able to keep my score from the last time I played
+2. A game that is easy to navigate
 
 ## Design Choices
+
+The overall feel of the game should be fun and colourful. The game is fairly simple, so the colours chosen and fonts used should add to the experience of playing the game
+and lend a hand in keeping the users engaged with the website. All of the parts of the game should be labeled clearly and inform the user of their purpose. 
 
 
 ### Font
 
-
-### Icons
-
+The fonts used on the game are Source Sans Pro and Abril Fatface. Both of the fonts were found on Google Fonts. For the majority of the text on the web-page, including the overlay, the font Source Sans Pro was used. For the title of the game, at the top of the page, Abril Fatface wsa chosen. The reason behind using two separate fonts is that overall, the website should be easily readable and understood, so Source Sans Pro was the clear choice due to its clean lettering and easy readability. However, to further enforce the "fun" aspect of the game, Abril Fatface was used in the title of the game at the top of the page. It is only used there due to the fact that it is slighty harder to read, so using it across the entire page would not have been ideal.
 
 ### Colours
-The main colours used on the site are:
-* 
-* 
-* 
-* 
-* 
 
+The main colours used on the site are:
+* rgba(99, 95, 95, 0.4) for the background of the overlay.
+* 0E79B2- HEX for the colour of the large button
+* F0A868- HEX for the background colour of the main page
+* 7BD389- HEX for the colour of the Score bar
+* The default button active/inactive colour for the Upgrades buttons as dictated by Bootstrap.
+
+The colour scheme for the game was created using Coolers. 
 
 ### Styling
 
-
-### Images
-
-
+The overall look of the game page is fairly simple. Centered on the page towards the top are the game name and the score area, and below are two columns containing the large click-box and the upgrades area, each in its own div element. Below both of those elements is the "Save Score" button. As the website relies heavily on the JavaScript code to run the game, the User Interface was deliberately designed to be on the simpler side. For this particular game, it felt more necessary to focus on the JavaScript Code that would run the page, rather than on inserting a lot of fancy icons and images that would ultimately be distracting for the user and possibly complicate the process of playing the game. In the end, the game has a simple concept, and it felt appropriate to keep the UI simple to reflect this.
 
 ## Wireframe Designs
 The Wireframe designs were created in a notebook using a pencil, and the following images are photos taken from the notebook. As they are handwritten, some of the writing may not be fully legible to all readers. To combat this, I have added a typed description of all pages below the image. Please refer to those if needed.  
@@ -62,7 +65,7 @@ The Wireframe designs were created in a notebook using a pencil, and the followi
 Please keep in mind that the drawings were the first stage of the design. and the actual website may look somewhat different from the drawings. Where the two differ, I offer an explanation as to why. 
 
 ### The Initial Overview 
-![journal page of the Overview](assets/images/IMG_20210301_102551.jpg "Overview journal page")
+![journal page of the Overview]( "Overview journal page")
 
 
 ### The Homepage
