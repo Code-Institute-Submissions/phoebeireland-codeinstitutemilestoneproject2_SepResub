@@ -64,14 +64,16 @@ The Wireframe designs were created in a notebook using a pencil, and the followi
 
 Please keep in mind that the drawings were the first stage of the design. and the actual website may look somewhat different from the drawings. Where the two differ, I offer an explanation as to why. 
 
-### The Initial Overview 
-![journal page of the Overview]( "Overview journal page")
+### The Project Overview 
+![journal page of the Overview](assets/images/project2overview.jpg "Overview journal page")
 
 
-### The Homepage
-![journal page of the Homepage](assets/images/IMG_20210301_103900.jpg "Homepage journal page")
+### Game Description and The Desktop View
+![journal page of the Homepage](assets/images/descriptionanddesktopview.jpg "Desktop journal page")
 This image shows the initial design for the homepage.
 
+### The Mobile View
+![journal page of the Overview](assets/images/mobileview.jpg "Mobile View journal page")
 
 
 # Features
