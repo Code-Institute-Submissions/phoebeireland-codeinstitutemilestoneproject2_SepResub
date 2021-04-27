@@ -83,11 +83,9 @@ $( "#td-printer" ).hover(
 );
 function updateScore(cost, allClickCount, is_box_click) {
   if (is_box_click) {
-      console.log("main box clicked");
       oldScore++;
       document.getElementById("score").innerText = oldScore.toFixed(2);
   } else {
-      console.log("im a bonus button");
       oldScore = parseInt(document.getElementById("score").innerText);
       document.getElementById("score").innerText = ((oldScore - (oldScore * cost)) + (allClickCount)).toFixed(2);
   }
@@ -95,27 +93,22 @@ function updateScore(cost, allClickCount, is_box_click) {
 }
 function checkScore() {
   if (oldScore >= 20) {
-      console.log("hit ");
       let firstButton = document.getElementById("c-scissor");
       firstButton.disabled = false;
   }
   if (oldScore >= 40) {
-      console.log("hit ");
       let firstButton = document.getElementById("f-scissor");
       firstButton.disabled = false;
   }
   if (oldScore >= 60) {
-    console.log("hit ");
     let firstButton = document.getElementById("stamp-cutter");
     firstButton.disabled = false;
   }
   if (oldScore >= 80) {
-    console.log("hit ");
     let firstButton = document.getElementById("laser-printer");
     firstButton.disabled = false;
   }
   if (oldScore >= 100) {
-    console.log("hit ");
     let firstButton = document.getElementById("td-printer");
     firstButton.disabled = false;
   }
@@ -137,5 +130,4 @@ function loadScore() {
 
 window.onload = (event) => {
   loadScore();
-  console.log('The previous score has loaded');
 }
