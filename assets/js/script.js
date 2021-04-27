@@ -1,19 +1,16 @@
-/* this was taken from stack overflow to use for the overlay*/
+// this was taken from stack overflow to use for the overlay
 $(document).ready(function() {
   let overlay = $('#overlay');
   overlay.on('click', function (e) { overlay.hide().off();
   });
 });
-//write a function that will count the clicks on the smaller buttons for the incrementation and assign that value to a variable
+
+//these are the universal variables used through the rest of the code
 let clickCount = 0;
 let oldScore = 0;
-//then write  a function that will translate that number of clicks into a usable multiplier for the button upgrades
-//figure out how to add cookie retention of data to save score = use Session
 
 //this was taken from the Love Maths Project
 function boxTotal() {
-  // let oldScore = parseInt(document.getElementById("score").innerText);
-  // document.getElementById("score").innerText = ++oldScore;
   updateScore(0, 0, true);
 }
 //the code for the click counter was taken from https://jsfiddle.net/sayham28/01hdx3t9/ and adapted
@@ -30,10 +27,13 @@ function clickTimer(multiplier, cost, delay) {
       checkScore();
   }, delay);
 }
+
+//this is the specific function for the child upgrade button
 function childTotal() {
   clickTimer(2, 0.1, 5000)
 }
 //this was taken from example on https://api.jquery.com/hover/
+//this is the function that expands the button to add a description when the mouse hovers over the button
 $( "#c-scissor" ).hover(
   function() {
     $( this ).append( $( "<span><br> Each click will add a multiplier of 2 to the current score</span>" ) );
@@ -41,9 +41,13 @@ $( "#c-scissor" ).hover(
     $( this ).find( "span" ).last().remove();
   }
 );
+
+//this is the specific function for the fancy scissors button
 function scissorTotal() {
   clickTimer(2.5, 0.2, 10000)
 }
+
+//this is the function that expands the button to add a description when the mouse hovers over the button
 $( "#f-scissor" ).hover(
   function() {
     $( this ).append( $( "<span><br> Each click will add a multiplier of 2.5 to the current score</span>" ) );
@@ -51,9 +55,13 @@ $( "#f-scissor" ).hover(
     $( this ).find( "span" ).last().remove();
   }
 );
+
+//this is the specific function for the stamp button
 function stampTotal() {
   clickTimer(3, 0.3,15000)
 }
+
+//this is the function that expands the button to add a description when the mouse hovers over the button
 $( "#stamp-cutter" ).hover(
   function() {
     $( this ).append( $( "<span><br> Each click will add a multiplier of 3 to the current score</span>" ) );
@@ -61,9 +69,13 @@ $( "#stamp-cutter" ).hover(
     $( this ).find( "span" ).last().remove();
   }
 );
+
+//this is the specific function for the laser button
 function laserTotal() {
   clickTimer(3.5, 0.4, 20000)
 }
+
+//this is the function that expands the button to add a description when the mouse hovers over the button
 $( "#laser-printer" ).hover(
   function() {
     $( this ).append( $( "<span><br> Each click will add a multiplier of 3.5 to the current score</span>" ) );
@@ -71,9 +83,13 @@ $( "#laser-printer" ).hover(
     $( this ).find( "span" ).last().remove();
   }
 );
+
+//this is the specific function for the 3D Printer button
 function tDTotal() {
   clickTimer(4, 0.5, 25000)
 }
+
+//this is the function that expands the button to add a description when the mouse hovers over the button
 $( "#td-printer" ).hover(
   function() {
     $( this ).append( $( "<span><br> Each click will add a multiplier of 4 to the current score</span>" ) );
@@ -81,6 +97,8 @@ $( "#td-printer" ).hover(
     $( this ).find( "span" ).last().remove();
   }
 );
+
+//this is the main function to calculate the score and display it in teh score section
 function updateScore(cost, allClickCount, is_box_click) {
   if (is_box_click) {
       oldScore++;
@@ -91,6 +109,8 @@ function updateScore(cost, allClickCount, is_box_click) {
   }
   checkScore();
 }
+
+//this checks the score to make sure the minimum is met to unlock the different upgrade buttons
 function checkScore() {
   if (oldScore >= 20) {
       let firstButton = document.getElementById("c-scissor");
@@ -114,11 +134,14 @@ function checkScore() {
   }
 }
 
+
+//this saves the current score (at the time of clicking) as a cookie
 function saveScore() {
   document.cookie = "score=" + oldScore.toString() + ";path=/";
   alert(document.cookie);
 }
 
+//this loads the saved score
 function loadScore() {
   let value = document.cookie.split("=")[1];
   if (isNaN(value)) {
@@ -128,6 +151,7 @@ function loadScore() {
   document.getElementById("score").innerText = oldScore;
 }
 
+//this specifically loads the saved score upon the loading of the window
 window.onload = (event) => {
   loadScore();
 }
