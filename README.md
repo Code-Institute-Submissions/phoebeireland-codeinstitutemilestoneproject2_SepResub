@@ -149,7 +149,7 @@ Created by Phoebe Ireland
 
 The content of this website was created by Phoebe Ireland, with the exception of the following:
 * [Google Fonts](https://fonts.google.com/)
-  * Used to apply the Source Sans Pro font to all pages
+  * Used to apply the Source Sans Pro font and Abril Fatface to all pages
 
    
    All of the content that was taken from other sources was altered to fit the use of this website where necessary (ie. not the images).
