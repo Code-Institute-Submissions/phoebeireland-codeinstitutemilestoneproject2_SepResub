@@ -23,7 +23,7 @@
 </head>
 <body>
     <div class= "container">
-        <!--This basic code was taken from stack overflow and altered-->
+        <!--This basic code for the overlay was taken from stack overflow (https://stackoverflow.com/questions/22837407/overlaying-a-transparent-div-which-when-clicked-disappears) and altered-->
         <div class="row" id="overlay">
             <div id="intro">
                 <h1>Welcome to Idle Square Factory!</h1>
@@ -55,8 +55,7 @@
             </div>
         </div>
     	<!-- this will have the clickable square and the list of upgrade options. 
-        On large screens, they'll be next to each other. on smaller screens they'll be stacked with the clicking area on top
-        The clickable area will be fixed as well, and the options will be fixed with an overflow on the y-axis for scrolling-->
+        On large screens, they'll be next to each other. on smaller screens they'll be stacked with the clicking area on top-->
         <div class="row">
             <div class= "col-12 col-lg-6">
                 <button id="main-square" onclick="boxTotal();">Click Me</button>
@@ -81,15 +80,3 @@
 <script src="assets/js/script.js"></script>
 </body>
 </html>
-
-<!-- The colour scheme was created using Coolors
-the code for the button/option table was taken from bootstrap 
-need to fix sizing issue on smaller screens (fixed)
-All code related to the overlay was taken from here and altered to fit the project: https://stackoverflow.com/questions/22837407/overlaying-a-transparent-div-which-when-clicked-disappears
-Uses jquery
-the code for the money area was taken from the Love Maths project-->
-<!-- possibly add a feature that sves the score so when you reload the page, the score is still there-->
-<!-- small fix- added .toFixed to make the score show to 2 decmial places found here https://www.w3schools.com/jsref/jsref_tofixed.asp-->
-<!-- code to enable the buttons found here: https://flaviocopes.com/how-to-disable-button-javascript/-->
-<!-- code for cookies was taken from https://gamedev.stackexchange.com/questions/47958/saving-scores-using-cookies and altered to fit-->
-<!-- to test the cookies, chrome wouldn't work so I had to make a python server-->
