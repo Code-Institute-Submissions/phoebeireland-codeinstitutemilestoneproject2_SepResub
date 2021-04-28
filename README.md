@@ -1,7 +1,7 @@
 # Idle Shape Factory
 
 * [Link to deployed website]()
-* [Link to github repository]()
+* [Link to github repository](https://github.com/phoebeireland/codeinstitutemilestoneproject2)
 
 
 # Contents
