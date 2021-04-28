@@ -79,14 +79,14 @@ This image shows the plan for the mobile view for the game. In this image, all o
 
 
 # Features
-* 
+* The website consists of one main page with the game name at the top of the page.
 * On smaller screens, the elements will stack on top of each other, with the score bar on top. 
-* 
+* In desktop view, the clicker box and the upgrade menus are side by side.
 
 ### The Homepage
-* 
-* 
-* 
+* When the game initially loads, there is an overview with the instructions on how to play the game on top of the ggame page.
+* When the game first loads, the upgrade buttons are all disabled, and are only enabled when the required money target is reached. 
+* There is a save button underneath the clicke box that can be used to save the current game score in a cookie. 
 
 
 # Testing the Site
@@ -99,7 +99,7 @@ All HTML pages and CSS files were tested using the HTML and CSS Validator from W
 ## Manual Testing
 
 Using the Chrome Inspect tool, the following aspects of the website were tested:
-* 
+* All of the contents of the page collaped when viewed on smaller screens
 * 
 * 
 * 
