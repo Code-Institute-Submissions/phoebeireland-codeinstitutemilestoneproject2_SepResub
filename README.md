@@ -99,23 +99,17 @@ All HTML pages and CSS files were tested using the HTML and CSS Validator from W
 ## Manual Testing
 
 Using the Chrome Inspect tool, the following aspects of the website were tested:
-* All of the contents of the page collaped when viewed on smaller screens
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+* All of the contents of the page collaped and stack on top of each other when viewed on smaller screens.
+* The text on the page and the overlay are easily read on all screen sizes. 
+* The buttons and the clicker box all scale down when viewd on smaller screens.
+* The overlay scales down with the smaller sized screens and the yellow background is always behind to text.
+* The various text elements are all centered when scaled down on smaller screens.
 
 ## Small Problems (that were fixed)
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+* One the smallest screens, the yellow box in the overlay was not behind all of the text, which made the instructions on the overlay somewhat difficult to read.
+* The main clicker box had slight sixing issues when viewd on smaller screens, but it was fixed.
+* Fixed the score so it reads to 2 decimal places rather than just one using the .toFixed() method. The code for that method was found [here](https://www.w3schools.com/jsref/jsref_tofixed.asp). 
+* On my laptop using Google Chrome, the cookies wouldn't display, so I had to make a python server to test to make sure that the cookies were functioning properly. The instructions to make the python server were found [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server).
 
 
 # Deployment
@@ -146,14 +140,24 @@ To Clone this repository using Visual Studio Code:
 
 # Credits
 
-
 Created by Phoebe Ireland
 
 The content of this website was created by Phoebe Ireland, with the exception of the following:
 * [Google Fonts](https://fonts.google.com/)
   * Used to apply the Source Sans Pro font and Abril Fatface to all pages
+* [Coolors](https://coolors.co/)
+  * Used to create the colour scheme for the game.
+* [Bootstrap](https://getbootstrap.com/)
+  * Used to create the Upgrade Buttons
+* [jQuery](https://jquery.com/)
+  * Uses jQuery for the overlay and the hover ability on the upgrade buttons.
+* Code Institute's Love Maths Project
+  * Used to figure out how to display and calculate the score.
+* [StackExchange](https://stackexchange.com/)
+  * Used to figure out how to make the cookies work.
+* [StackOverflow](https://stackoverflow.com/)
+  * Used to find the jQuery code for the overlay. 
 
-   
-   All of the content that was taken from other sources was altered to fit the use of this website where necessary (ie. not the images).
+   All of the content that was taken from other sources was altered to fit the use of this website where necessary.
 
 A special thank you to my mentor for helping me though the project, and pointing out my (numerous) mistakes. 
