@@ -111,6 +111,7 @@ function updateScore(cost, allClickCount, is_box_click) {
 }
 
 //this checks the score to make sure the minimum is met to unlock the different upgrade buttons
+// code to disable/enable the buttons found here: https://flaviocopes.com/how-to-disable-button-javascript/
 function checkScore() {
   if (oldScore >= 20) {
       let firstButton = document.getElementById("c-scissor");
@@ -136,6 +137,7 @@ function checkScore() {
 
 
 //this saves the current score (at the time of clicking) as a cookie
+// Code for this was taken from https://gamedev.stackexchange.com/questions/47958/saving-scores-using-cookies and altered to fit
 function saveScore() {
   document.cookie = "score=" + oldScore.toString() + ";path=/";
   alert(document.cookie);
