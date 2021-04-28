@@ -66,19 +66,21 @@ Please keep in mind that the drawings were the first stage of the design. and th
 
 ### The Project Overview 
 ![journal page of the Overview](assets/images/project2overview.jpg "Overview journal page")
+This image shows the general requirements for this project as the top. Below is the layout plan of the pages for the project.
 
 
 ### Game Description and The Desktop View
 ![journal page of the Homepage](assets/images/descriptionanddesktopview.jpg "Desktop journal page")
-This image shows the initial design for the homepage.
+This image shows the idea behind the idle clicker game  as well as the proposed desktop view for the game. 
 
 ### The Mobile View
 ![journal page of the Overview](assets/images/mobileview.jpg "Mobile View journal page")
+This image shows the plan for the mobile view for the game. In this image, all of the items are to be stacked on top of one another. In the final product, the money bar was moved to the top of the page (under the game name) and it is not fixed. 
 
 
 # Features
 * 
-* On smaller screens, the elements will stack on top of each other. 
+* On smaller screens, the elements will stack on top of each other, with the score bar on top. 
 * 
 
 ### The Homepage
