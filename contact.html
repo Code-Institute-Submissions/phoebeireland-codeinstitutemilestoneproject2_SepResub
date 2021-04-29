@@ -52,19 +52,25 @@
                 </h5>
                 <form method="POST" action="https://formdump.codeinstitute.net/" id="info-form">
                     <h5 id="info-prompt">Your Info:</h5>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" class="text-input" required/>
-                    <br>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email_address" class="text-input" required/>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
                     <h5 id="preference-prompt">Let us know what type of request you are sending:</h5>
                     <label for="issue">Issue with the game</label>
                     <input type="checkbox" id="issue" name="weapon-preference" value="issue"/>
                     <label for="improvement">Suggest an improvement</label>
                     <input type="checkbox" id="improvement" name="weapon-preference" value="improvement"/>
                     <h5 id="other-info-prompt">Query:</h5>
-                    <textarea name="any-other-info" rows="10" cols="40" placeholder="Write your message here..."></textarea>
-                    <br>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your message for us here..."></textarea>
+                      </div>
                     <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
             </div>
