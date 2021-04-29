@@ -75,3 +75,8 @@
   #other-info-prompt {
       text-decoration: underline;
   }
+
+  #instruction-intro {
+      text-decoration: underline;
+      margin-top: 3rem;
+  }
