@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,105 +9,113 @@
     <meta name="author" content="Idle Shape Factory">
     <title>Idle Shape Factory</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-            crossorigin="anonymous"></script>
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">  
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Contact Form</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function () {
             // https://dashboard.emailjs.com/admin/integration
             emailjs.init('YOUR_USER_ID');
         })();
     </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+    <script>
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
                 emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
+                    .then(function () {
                         console.log('SUCCESS!');
-                    }, function(error) {
+                    }, function (error) {
                         console.log('FAILED...', error);
                     });
             });
         }
     </script>
 </head>
+
 <body>
-    <div class= "container">
+    <div class="container">
         <div class="row">
             <div></div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  <a class="nav-link" href="gameinstructions.html">How to Play</a>
-                  <a class="nav-link" href="contact.html">Contact Us</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="gameinstructions.html">How to Play</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </nav>
-        <div class= "row" id= "game-name">
+        </nav>
+        <div class="row" id="game-name">
             <div class="col-12 text-center">
                 <h1>Idle Square Factory</h1>
             </div>
         </div>
         <div class="row">
-            <h2 id="form-header" class="text-center">Feedback Form</h2>
-            <hr>
-            <div class="col-12" id="info-form">
-                <h5 id="form-blurb">If you'd like to submit an issue with the game, or simply suggest an improvement for our game, please let us know below.
-                </h5>
-                <form method="POST" action="https://formdump.codeinstitute.net/" id="form">
-                    <h5 id="info-prompt">Your Info:</h5>
-                    <div class="mb-3">
-                        <label for="from_name" class="form-label">Name:</label>
-                        <input type="text" class="form-control" name="from_name" id="from_name">
-                        <input type="text" name="to_name" value="Square Factory" id="to_name" hidden>
-                      </div>
-                    <div class="mb-3">
-                        <label for="reply_to" class="form-label">Email address:</label>
-                        <input type="text" class="form-control" id="reply_to" name= "reply_to" placeholder="name@example.com">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <h5 id="preference-prompt">Let us know what type of request you are sending:</h5>
-                    <label for="issue">Issue with the game</label>
-                    <input type="checkbox" id="issue" name="issue" value="issue"/>
-                    <label for="improvement">Suggest an improvement</label>
-                    <input type="checkbox" id="improvement" name="improvement" value="improvement"/>
-                    <h5 id="other-info-prompt">Query:</h5>
-                    <div class="mb-3">
-                        <label for="message" class="form-label"></label>
-                        <input type="text" class="form-control" id="message" name="message" rows="3" placeholder="Write your message for us here...">
-                      </div>
-                      <input type="submit" id="info-button" value="Send Email" >
-                </form>
-                <script type="text/javascript"
-                src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-              
-              <script type="text/javascript">
-                emailjs.init('user_PZLH1AMRcfmxCkmpYJaK0')
-              </script>
+            <div class="col-12">
+                <h2 id="form-header" class="text-center">Feedback Form</h2>
+                <hr>
+                <div class="col-12" id="info-form">
+                    <h5 id="form-blurb">If you'd like to submit an issue with the game, or simply suggest an improvement
+                        for our game, please let us know below.
+                    </h5>
+                    <form method="POST" action="https://formdump.codeinstitute.net/" id="form">
+                        <h5 id="info-prompt">Your Info:</h5>
+                        <div class="mb-3">
+                            <label for="from_name" class="form-label">Name:</label>
+                            <input type="text" class="form-control" name="from_name" id="from_name">
+                            <input type="text" name="to_name" value="Square Factory" id="to_name" hidden>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reply_to" class="form-label">Email address:</label>
+                            <input type="text" class="form-control" id="reply_to" name="reply_to"
+                                placeholder="name@example.com">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <h5 id="preference-prompt">Let us know what type of request you are sending:</h5>
+                        <label for="issue">Issue with the game</label>
+                        <input type="checkbox" id="issue" name="issue" value="issue" />
+                        <label for="improvement">Suggest an improvement</label>
+                        <input type="checkbox" id="improvement" name="improvement" value="improvement" />
+                        <h5 id="other-info-prompt">Query:</h5>
+                        <div class="mb-3">
+                            <label for="message" class="form-label"></label>
+                            <textarea class="form-control" id="message" name="message" rows="3"
+                                placeholder="Write your message for us here..."></textarea>
+                        </div>
+                        <input type="submit" id="info-button" value="Send Email">
+                    </form>
+                    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+                    <script>
+                        emailjs.init('user_PZLH1AMRcfmxCkmpYJaK0')
+                    </script>
+                </div>
             </div>
+        </div>
     </div>
-<script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
