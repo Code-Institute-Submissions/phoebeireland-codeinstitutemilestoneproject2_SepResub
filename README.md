@@ -1,4 +1,4 @@
-# Idle Shape Factory
+# Idle Square Factory
 
 * [Link to deployed website]()
 * [Link to github repository](https://github.com/phoebeireland/codeinstitutemilestoneproject2)
