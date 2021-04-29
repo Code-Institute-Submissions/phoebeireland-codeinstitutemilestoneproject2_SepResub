@@ -149,6 +149,7 @@ The content of this website was created by Phoebe Ireland, with the exception of
   * Used to create the colour scheme for the game.
 * [Bootstrap](https://getbootstrap.com/)
   * Used to create the Upgrade Buttons
+  * Used to create the Navbar
 * [jQuery](https://jquery.com/)
   * Uses jQuery for the overlay and the hover ability on the upgrade buttons.
 * Code Institute's Love Maths Project
