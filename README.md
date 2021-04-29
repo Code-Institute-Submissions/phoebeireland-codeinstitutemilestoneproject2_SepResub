@@ -131,12 +131,17 @@ Using the Chrome Inspect tool, the following aspects of the website were tested:
 * The overlay scales down with the smaller sized screens and the yellow background is always behind to text.
 * The various text elements are all centered when scaled down on smaller screens.
 
+The EmailJS extenstion was tested using a sample email address and sample message.
+* The result of this test was that the EmailJS service sent an email to the connected email address saying that a message was submitted.
+* Also, an Auto-Reply email was successfully sent to the email address provied in the form. 
+
+
 ## Small Problems (that were fixed)
-* One the smallest screens, the yellow box in the overlay was not behind all of the text, which made the instructions on the overlay somewhat difficult to read.
-* The main clicker box had slight sixing issues when viewd on smaller screens, but it was fixed.
+* One the smallest screens, the yellow box in the overlay was not behind all of the text, which made the instructions on the overlay somewhat difficult to read. This was fixed by manually setting the size of the background box to a larger size that would surround the text on all screen sizes. 
+* The main clicker box had slight sixing issues when viewd on smaller screens, but it was fixed but altering the width and height dimensions in CSS.
 * Fixed the score so it reads to 2 decimal places rather than just one using the .toFixed() method. The code for that method was found [here](https://www.w3schools.com/jsref/jsref_tofixed.asp). 
-* On my laptop using Google Chrome, the cookies wouldn't display, so I had to make a python server to test to make sure that the cookies were functioning properly. The instructions to make the python server were found [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server).
-* Had some issues connecting Emailjs functionality to the form I had made. Fixed it by looking at the sample code on the EmailJs site and matching up the missing pieces to my code.
+* On my laptop using Google Chrome, the cookies wouldn't display, so I had to make a python server to test to make sure that the cookies were functioning properly. The instructions to make the python server were found [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server). Once the server was made and the page was opened within the serve, I was able to see that the cookies were indeed working as they ought to be (ie, saving when the save button was pressed, and loading when the screen was reloaded).
+* Had some issues connecting Emailjs functionality to the form I had made. Fixed it by looking at the sample code on the EmailJs site and matching up the missing pieces to my code. I had created the form on its own initially, so when it came time to connect EmailJS to the form, it presented with some issues. This was fixed by renaming some of the elements and making sure that the elements had the correct IDs and names.
 
 
 # Deployment
