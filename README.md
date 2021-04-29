@@ -159,7 +159,8 @@ The content of this website was created by Phoebe Ireland, with the exception of
   * Used to figure out how to make the cookies work.
 * [StackOverflow](https://stackoverflow.com/)
   * Used to find the jQuery code for the overlay. 
-
+* [Emailjs](https://www.emailjs.com/)
+  * Used to connect the contact form to an email service.
    All of the content that was taken from other sources was altered to fit the use of this website where necessary.
 
 A special thank you to my mentor for helping me though the project, and pointing out my (numerous) mistakes. 
