@@ -1,6 +1,6 @@
 # Idle Square Factory
 
-* [Link to deployed website]()
+* [Link to deployed website](https://phoebeireland.github.io/codeinstitutemilestoneproject2/)
 * [Link to github repository](https://github.com/phoebeireland/codeinstitutemilestoneproject2)
 
 
@@ -147,7 +147,7 @@ The EmailJS extenstion was tested using a sample email address and sample messag
 # Deployment
 The Website was created in Visual Studio Code, version controlled with Git and hosted on Github. 
 
-This website has been deployed to GitHub Pages- [link to website]()
+This website has been deployed to GitHub Pages- [link to website](https://phoebeireland.github.io/codeinstitutemilestoneproject2/)
 
 Steps to publish website to GitHub Pages:
 1. On the main page of the repository, click settings.
