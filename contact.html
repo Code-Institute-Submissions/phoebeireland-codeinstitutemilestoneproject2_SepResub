@@ -44,6 +44,30 @@
                 <h1>Idle Square Factory</h1>
             </div>
         </div>
+        <div class="row">
+            <h2 id="form-header" class="text-center">Feedback Form</h2>
+            <hr>
+            <div class="col-12" id="contact-form">
+                <h5 id="form-blurb">If you'd like to submit an issue with the game, or simply suggest an improvement for our game, please let us know below.
+                </h5>
+                <form method="POST" action="https://formdump.codeinstitute.net/" id="info-form">
+                    <h5 id="info-prompt">Your Info:</h5>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="text-input" required/>
+                    <br>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email_address" class="text-input" required/>
+                    <h5 id="preference-prompt">Let us know what type of request you are sending:</h5>
+                    <label for="issue">Issue with the game</label>
+                    <input type="checkbox" id="issue" name="weapon-preference" value="issue"/>
+                    <label for="improvement">Suggest an improvement</label>
+                    <input type="checkbox" id="improvement" name="weapon-preference" value="improvement"/>
+                    <h5 id="other-info-prompt">Query:</h5>
+                    <textarea name="any-other-info" rows="10" cols="40" placeholder="Write your message here..."></textarea>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </form>
+            </div>
     </div>
 <script src="assets/js/script.js"></script>
 </body>

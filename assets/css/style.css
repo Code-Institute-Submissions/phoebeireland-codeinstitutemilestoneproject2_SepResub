@@ -55,3 +55,19 @@
   .btn{
       margin-top: 2rem;
   }
+
+  #form-header {
+      margin-top: 3rem;
+  }
+
+  #form-blurb {
+      text-decoration: underline;
+  }
+
+  #info-prompt {
+    text-decoration: underline;
+  }
+
+  #preference-prompt {
+    text-decoration: underline;
+  }
