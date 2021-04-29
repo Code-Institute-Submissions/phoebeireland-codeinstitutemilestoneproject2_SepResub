@@ -33,6 +33,8 @@ As a New User to the site, I want:
 As a Returning User to the site, I want:
 1. To be able to keep my score from the last time I played
 2. A game that is easy to navigate
+3. An easy way to remind myself how to play the game 
+4. A way to contact the creator of the game to report any issues or submit any ideas for improvement
 
 ## Design Choices
 
@@ -77,17 +79,41 @@ This image shows the idea behind the idle clicker game  as well as the proposed 
 ![journal page of the Overview](assets/images/mobileview.jpg "Mobile View journal page")
 This image shows the plan for the mobile view for the game. In this image, all of the items are to be stacked on top of one another. In the final product, the money bar was moved to the top of the page (under the game name) and it is not fixed. 
 
+### The Contact Form Page
+![journal page of the Overview](assets/images/contactpage.jpg "Contact Form Page")
+This image shows the plan for the contact form page. In this image, all of the items are able to be stacked on top of each other and scale down to fit the size of the screen.
+
+### The Email Template Idea
+![journal page of the Overview](assets/images/emailtemplateidea.jpg "Email template idea")
+This image shows the plan for the email template to be sent by EmailJS. This is the email that will be sent to whoever sends a feedback form.
+
+### The How to Play Page
+![journal page of the Overview](assets/images/howtoplaypage.jpg "The How to Play Page")
+This image shows the plan for the How to PLay page. It is basically a reiteration of the rules on how to play the game that is displayed on the overlay. It felt necessary to reiterate those instructions elsewhere on the site. 
 
 # Features
-* The website consists of one main page with the game name at the top of the page.
-* On smaller screens, the elements will stack on top of each other, with the score bar on top. 
-* In desktop view, the clicker box and the upgrade menus are side by side.
+* Every page has the game name at the top of the page as well as the Navbar.
+* On smaller screens, the elements will stack on top of each other.
 
 ### The Homepage
 * When the game initially loads, there is an overview with the instructions on how to play the game on top of the ggame page.
 * When the game first loads, the upgrade buttons are all disabled, and are only enabled when the required money target is reached. 
 * There is a save button underneath the clicke box that can be used to save the current game score in a cookie. 
+* On smaller screens, the elements will stack on top of each other, with the score bar on top. 
+* In desktop view, the clicker box and the upgrade menus are side by side.
 
+### The How to Play Page
+* When the page loads, the instructions are loaded as a list.
+* On smaller screens, the list of instructions scales to fit.
+
+### The Contact Page
+* When the page loads, the form is loaded across the page.
+* On smaller screens the form scales down and fits thte size of the screen. 
+* There are multiple input boxes for users to enter their name and email address into the form, as well as a box for written comments.
+* There are two checkboxes for users to indicate which type of feedback they are submitting.
+* There is a large textbox area for the user to submit a written message.
+* There is a submit button for the user to use to send their message to the website. 
+* The submit button is linked to EmailJS and sends an Auto-Reply to the sender of the email to the email address that they provide.
 
 # Testing the Site
 
@@ -110,6 +136,7 @@ Using the Chrome Inspect tool, the following aspects of the website were tested:
 * The main clicker box had slight sixing issues when viewd on smaller screens, but it was fixed.
 * Fixed the score so it reads to 2 decimal places rather than just one using the .toFixed() method. The code for that method was found [here](https://www.w3schools.com/jsref/jsref_tofixed.asp). 
 * On my laptop using Google Chrome, the cookies wouldn't display, so I had to make a python server to test to make sure that the cookies were functioning properly. The instructions to make the python server were found [here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server).
+* Had some issues connecting Emailjs functionality to the form I had made. Fixed it by looking at the sample code on the EmailJs site and matching up the missing pieces to my code.
 
 
 # Deployment
@@ -161,6 +188,8 @@ The content of this website was created by Phoebe Ireland, with the exception of
   * Used to find the jQuery code for the overlay. 
 * [Emailjs](https://www.emailjs.com/)
   * Used to connect the contact form to an email service.
+
+
    All of the content that was taken from other sources was altered to fit the use of this website where necessary.
 
 A special thank you to my mentor for helping me though the project, and pointing out my (numerous) mistakes. 
