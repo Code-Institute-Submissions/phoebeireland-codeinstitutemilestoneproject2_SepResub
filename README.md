@@ -150,6 +150,7 @@ The content of this website was created by Phoebe Ireland, with the exception of
 * [Bootstrap](https://getbootstrap.com/)
   * Used to create the Upgrade Buttons
   * Used to create the Navbar
+  * Used to help create elements of the contact form
 * [jQuery](https://jquery.com/)
   * Uses jQuery for the overlay and the hover ability on the upgrade buttons.
 * Code Institute's Love Maths Project
