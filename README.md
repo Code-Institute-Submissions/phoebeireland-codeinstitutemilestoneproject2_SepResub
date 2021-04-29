@@ -151,7 +151,7 @@ This website has been deployed to GitHub Pages- [link to website]()
 
 Steps to publish website to GitHub Pages:
 1. On the main page of the repository, click settings.
-2. Scroll to the GitHub Pages section.
+2. Go to the GitHub Pages section on the menu bar to the left.
 3. In the Source section, click "None" and change the selected branch to "main". 
 4. Leave the following option as (root), and click "Save"
 5. Once the repository is published, a link to the website will be shown in the GitHub Pages section. 
