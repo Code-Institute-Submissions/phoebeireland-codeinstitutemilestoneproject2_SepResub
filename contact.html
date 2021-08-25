@@ -25,24 +25,8 @@
     <script>
         (function () {
             // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('YOUR_USER_ID');
+            emailjs.init('user_PZLH1AMRcfmxCkmpYJaK0');
         })();
-    </script>
-    <script>
-        window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function () {
-                        console.log('SUCCESS!');
-                    }, function (error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
     </script>
 </head>
 
@@ -80,17 +64,17 @@
                     <h5 id="form-blurb">If you'd like to submit an issue with the game, or simply suggest an improvement
                         for our game, please let us know below.
                     </h5>
-                    <form method="POST" action="https://formdump.codeinstitute.net/" id="form">
+                    <form method="POST" action="https://formdump.codeinstitute.net/" id="contact-form">
                         <h5 id="info-prompt">Your Info:</h5>
                         <div class="mb-3">
                             <label for="from_name" class="form-label">Name:</label>
-                            <input type="text" class="form-control" name="from_name" id="from_name">
+                            <input type="text" class="form-control" name="from_name" id="from_name" required>
                             <input type="text" name="to_name" value="Square Factory" id="to_name" hidden>
                         </div>
                         <div class="mb-3">
                             <label for="reply_to" class="form-label">Email address:</label>
                             <input type="text" class="form-control" id="reply_to" name="reply_to"
-                                placeholder="name@example.com">
+                                placeholder="name@example.com" required>
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <h5 id="preference-prompt">Let us know what type of request you are sending:</h5>
@@ -102,20 +86,34 @@
                         <div class="mb-3">
                             <label for="message" class="form-label"></label>
                             <textarea class="form-control" id="message" name="message" rows="3"
-                                placeholder="Write your message for us here..."></textarea>
+                                placeholder="Write your message for us here..." required></textarea>
                         </div>
                         <input type="submit" id="info-button" value="Send Email">
                     </form>
-                    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-
-                    <script>
-                        emailjs.init('user_PZLH1AMRcfmxCkmpYJaK0')
-                    </script>
                 </div>
             </div>
         </div>
     </div>
-    <script src="assets/js/script.js"></script>
+    <script>
+    const btn = document.getElementById('info-button');
+    document.getElementById('contact-form')
+        .addEventListener('submit', function(event) {
+          event.preventDefault();
+       
+          btn.value = 'Sending...';
+       
+          const serviceID = 'default_service';
+          const templateID = 'contact_form';
+       
+          emailjs.sendForm(serviceID, templateID, this)
+           .then(() => {
+             btn.value = 'Send Email';
+             alert('Sent!');
+           }, (err) => {
+             btn.value = 'Send Email';
+             alert(JSON.stringify(err));
+           });
+       });</script>
 </body>
 
 </html>
