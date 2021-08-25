@@ -135,6 +135,18 @@ The EmailJS extenstion was tested using a sample email address and sample messag
 * The result of this test was that the EmailJS service sent an email to the connected email address saying that a message was submitted.
 * Also, an Auto-Reply email was successfully sent to the email address provied in the form. 
 
+## Testing User Stories
+### New User:
+1. Upon entering the site initally, the user is greeted by an overlay that goes step-by-step through the instructions on how th egame works, and how to play. Once through with reading the instructions, the user can click on the overlay, or elsewhere on the screen, and begin to play the game. If a refresher of the instructions is needed, a player need only look to the navbar at the top of the page and click on the How to Play section to be brought to a page that restates the instructions provided on the initial overlay. 
+2. The main elements on the main game page are the various buttons and the money score area at the top of the page. All of the buttons are clearly labeled, with the functions of the button either immediately available upon a glance or, once the button has been unlocked, available by simply hovering the cursor over the button. 
+3. Although the game itself is fairly simple, the colours chosen for the game are bright and playful and engaging. Each different aspect of the game- the buttons, the score area, the navbar- has its own colour that distinguishes it from the other elements, while still keeping a cohesive colour scheme. 
+
+### Returning User:
+1. At the bottom of the page, there is a Save Score button. In the instructions provided on both the inital overlay and on the How to Play page, it states clearly that in order for a user to save their current score upon exitiing or reloading the website, they must first press the Save Score button. A further confirmation of the current saved score pops up once the user has clicked the button.
+2. The Navbar is clearly at the top of the page, and the different sections- Home, How to Play and Contact Us- are all clearly visible and easy to click on to nagivate to the desired page.
+3. The game always presents the guidelines for how to play the game when the page is initially loaded, as well as any time it is refreshed or reopened. In addition, there is the ability to use the navbar to go to a page that also clearly optlines the rules of the game. 
+4. Located in the Navbar, the third option takes the user to the contact form in which they are able to submit a comment or suggestion regarding the website. The form is straightforward and easy to navigate. All the user needs to submit is their name, email and comment typed into the provided text box. The form is linked to EmailJs, so when it is submitted, an email is sent to the website email, and another email is sent to the email address provided confirming that their comment or suggestion was submitted. 
+
 
 ## Small Problems (that were fixed)
 * One the smallest screens, the yellow box in the overlay was not behind all of the text, which made the instructions on the overlay somewhat difficult to read. This was fixed by manually setting the size of the background box to a larger size that would surround the text on all screen sizes. 
