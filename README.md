@@ -17,7 +17,9 @@
 
 ## The Project- Purpose and Buisness Goals
 
-The purpose of this website was to create an idle clicker game. The webpage should both be a platform for the game as well as provide information for users on how the 
+The purpose of this website was to create an idle clicker game. At the moment, Idle Clicker games are rising in popularity- see games such as Cookie Clicker (desktop) or Idle Miner (mobile) to help understand the inspiration for this project.
+
+The webpage should both be a platform for the game as well as provide information for users on how the 
 game is played. 
 
 On the business end, the website should be simple nough to use for new users, while still offering enough content and variety for returning users. Furthermore, returning users should
