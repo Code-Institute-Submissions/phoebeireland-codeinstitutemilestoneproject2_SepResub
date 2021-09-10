@@ -205,6 +205,8 @@ The content of this website was created by Phoebe Ireland, with the exception of
   * Used to find the jQuery code for the overlay. 
 * [Emailjs](https://www.emailjs.com/)
   * Used to connect the contact form to an email service.
+* [Bootswatch](https://bootswatch.com/)
+  * Used to add new styles to the Bootstrap elements
 
 
    All of the content that was taken from other sources was altered to fit the use of this website where necessary.
