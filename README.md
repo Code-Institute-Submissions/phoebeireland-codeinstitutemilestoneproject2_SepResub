@@ -49,17 +49,14 @@ The fonts used on the game are Source Sans Pro and Abril Fatface. Both of the fo
 ### Colours
 
 The main colours used on the site are:
-* rgba(99, 95, 95, 0.4) for the background of the overlay.
 * 0E79B2- HEX for the colour of the large button
-* F0A868- HEX for the background colour of the main page
-* 7BD389- HEX for the colour of the Score bar
-* The default button active/inactive colour for the Upgrades buttons as dictated by Bootstrap.
+* The default colours on the Bootswatch Quartz theme for the background, score bar, buttons, overlay, form and contact us page cards.
 
 The colour scheme for the game was created using Coolers. 
 
 ### Styling
 
-The overall look of the game page is fairly simple. Centered on the page towards the top are the game name and the score area, and below are two columns containing the large click-box and the upgrades area, each in its own div element. Below both of those elements is the "Save Score" button. As the website relies heavily on the JavaScript code to run the game, the User Interface was deliberately designed to be on the simpler side. For this particular game, it felt more necessary to focus on the JavaScript Code that would run the page, rather than on inserting a lot of fancy icons and images that would ultimately be distracting for the user and possibly complicate the process of playing the game. In the end, the game has a simple concept, and it felt appropriate to keep the UI simple to reflect this.
+The overall look of the game page is fairly simple. Centered on the page towards the top are the game name and the score area, and below are two columns containing the large click-box and the upgrades area, each in its own div element. Below both of those elements is the "Save Score" button. To bring in a more varied and colourful look to the website, I turned to [Bootswatch](https://bootswatch.com/), which provides many free themes for Bootstrap. As this is a game that is meant to be engaging, I chose the Quartz theme, as it was the most colourful theme they had. As the name of the game is colour and fun, I trie to incorporate as many different colourful elements on each page as possible. 
 
 ## Wireframe Designs
 The Wireframe designs were created in a notebook using a pencil, and the following images are photos taken from the notebook. As they are handwritten, some of the writing may not be fully legible to all readers. To combat this, I have added a typed description of all pages below the image. Please refer to those if needed.  

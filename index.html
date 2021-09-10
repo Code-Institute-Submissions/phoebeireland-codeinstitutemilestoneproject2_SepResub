@@ -26,11 +26,11 @@
     <div class= "container">
         <!--This basic code for the overlay was taken from stack overflow (https://stackoverflow.com/questions/22837407/overlaying-a-transparent-div-which-when-clicked-disappears) and altered-->
         <div class="row" id="overlay">
-            <div id="intro">
-                <h1>Welcome to Idle Square Factory!</h1>
-                <br>
-                <h3>How to Play:</h3>
-                <ul>
+            <div class="card text-white bg-primary mb-3" style="max-width: 20rem;" id="intro">
+                <div class="card-header"><h2>Welcome to Idle Square Factory</h2></div>
+                <div class="card-body">
+                  <h4 class="card-title">How to Play:</h4>
+                  <ul>
                     <li>Click the blue square to earn money</li>
                     <li>Use the money earned to buy upgrades</li>
                     <li>Upgrades unlock at certain money threshholds</li>
@@ -41,22 +41,34 @@
                 </ul>
                 <br>
                 <h2>Click Here to Start Game!</h2>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  <a class="nav-link" href="gameinstructions.html">How to Play</a>
-                  <a class="nav-link" href="contact.html">Contact Us</a>
                 </div>
               </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Idle Square Factory</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gameinstructions.html">How to Play</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
         <div class= "row" id= "game-name">
             <div class="col-12 text-center">
                 <h1>Idle Square Factory</h1>
@@ -64,7 +76,7 @@
         </div>
          <!-- this will have the total money. this wil be fixed to the top of the screen. It'll have a solid colour background-->
         <div class= "row" id= "total-money">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center bg-success">
                 <!--This was taken from Love Maths and altered-->
 				<h2 class="scores">$<span id="score">0</span></h2>
             </div>
@@ -73,22 +85,22 @@
         On large screens, they'll be next to each other. on smaller screens they'll be stacked with the clicking area on top-->
         <div class="row">
             <div class= "col-12 col-lg-6">
-                <button id="main-square" onclick="boxTotal();">Click Me</button>
+                <button class="bg-info" id="main-square" onclick="boxTotal();">Click Me</button>
             </div>
             <div class= "col-12 col-lg-6">
                 <h2 id="upgrades">Upgrades:</h2>
                 <div class="d-grid gap-2">
-                    <button id= "c-scissor" class="btn btn-primary" type="button" onclick="childTotal();" disabled data-bs-toggle="button">+1 Child Scissors</button>
-                    <button id= "f-scissor" class="btn btn-primary" type="button" onclick="scissorTotal();" disabled data-bs-toggle="button">+1 Fancy Scissors</button>
-                    <button id= "stamp-cutter" class="btn btn-primary" type="button" onclick="stampTotal();" disabled data-bs-toggle="button">+1 Stamp Cutter</button>
-                    <button id= "laser-printer" class="btn btn-primary" type="button" onclick="laserTotal();" disabled data-bs-toggle="button">+1 Laser Printer</button>
-                    <button id= "td-printer" class="btn btn-primary" type="button" onclick="tDTotal();" disabled data-bs-toggle="button">+1 3D Printer</button>
+                    <button id= "c-scissor" class="btn btn-lg btn-primary" type="button" onclick="childTotal();" disabled data-bs-toggle="button">+1 Child Scissors</button>
+                    <button id= "f-scissor" class="btn btn-lg btn-secondary" type="button" onclick="scissorTotal();" disabled data-bs-toggle="button">+1 Fancy Scissors</button>
+                    <button id= "stamp-cutter" class="btn btn-lg btn-success" type="button" onclick="stampTotal();" disabled data-bs-toggle="button">+1 Stamp Cutter</button>
+                    <button id= "laser-printer" class="btn btn-lg btn-info" type="button" onclick="laserTotal();" disabled data-bs-toggle="button">+1 Laser Printer</button>
+                    <button id= "td-printer" class="btn btn-lg btn-warning" type="button" onclick="tDTotal();" disabled data-bs-toggle="button">+1 3D Printer</button>
                   </div>
             </div>
         </div>
         <div class = "row">
             <div class="col-12">
-                <button class="btn btn-primary" type="button" onclick="saveScore();" >Save Score</button>
+                <button class="btn btn-danger btn-lg" type="button" onclick="saveScore();" >Save Score</button>
             </div>
         </div>
     </div>

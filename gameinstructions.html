@@ -24,40 +24,52 @@
 </head>
 <body>
     <div class= "container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Idle Square Factory</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  <a class="nav-link" href="gameinstructions.html">How to Play</a>
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </div>
-              </div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gameinstructions.html">How to Play</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
             </div>
-          </nav>
+        </div>
+    </nav>
         <div class= "row" id= "game-name">
             <div class="col-12 text-center">
                 <h1>Idle Square Factory</h1>
             </div>
         </div>
         <div class="row">
-            <div id="instructions">
-                <h1 id="instruction-intro">Welcome to Idle Square Factory!</h1>
-                <br>
-                <h3>How to Play:</h3>
-                <ul>
-                    <li>Click the blue square to earn money</li>
-                    <li>Use the money earned to buy upgrades</li>
-                    <li>Upgrades unlock at certain money threshholds</li>
-                    <li>The First upgrade unlocks at $20, the Second at $40 and so on</li>
-                    <li>Upgrades will help you earn more money</li>
-                    <li>To save your score before you leave the page, press the "Save Score" button at the bottom of the page</li>
-                    <li>Make as much money as you can to become the most profitable Square Factory!</li>
-                </ul>
+          <div class="card text-white bg-info mb-3" style="max-width: 60rem;" id="instructions">
+            <div class="card-header"><h1 id="instruction-intro">Welcome to Idle Square Factory!</h1></div>
+            <div class="card-body">
+              <h4 class="card-title">How to Play:</h4>
+              <ul>
+                <li>Click the blue square to earn money</li>
+                <li>Use the money earned to buy upgrades</li>
+                <li>Upgrades unlock at certain money threshholds</li>
+                <li>The First upgrade unlocks at $20, the Second at $40 and so on</li>
+                <li>Upgrades will help you earn more money</li>
+                <li>To save your score before you leave the page, press the "Save Score" button at the bottom of the page</li>
+                <li>Make as much money as you can to become the most profitable Square Factory!</li>
+            </ul>
             </div>
+          </div>
         </div>
     </div>
 </body>

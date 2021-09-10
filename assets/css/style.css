@@ -20,10 +20,9 @@
     z-index: 10;
 }
 #intro {
-    background:darkkhaki;
-    height: 37rem;
-    margin: 3rem auto ;
-    width: 30rem;
+    height: auto;
+    margin: auto ;
+    width: auto;
 }
 #intro > h1 {
     text-align: center;
@@ -36,16 +35,15 @@
   #game-name {
       margin-top: 2rem;
       font-family: 'Abril Fatface', cursive;
+      color: darkblue;
   }
   #total-money {
-      background-color:#7BD389;
       margin-top: 2rem;
   }
   #main-square {
       width: 100%;
       height: 50vh;
       padding: 0 2rem;
-      background-color: #0E79B2;
       font-size: x-large;
   }
   #upgrades {
@@ -66,6 +64,10 @@
 
   #info-prompt {
     text-decoration: underline;
+  }
+
+  #info-button {
+      margin-bottom: 2rem;
   }
 
   #preference-prompt {
